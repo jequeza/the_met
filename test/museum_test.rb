@@ -93,7 +93,7 @@ class MuseumTest < Minitest::Test
 
     expected = {
                   gems_and_minerals => [patron_1],
-                  dead_sea_scrolls => [patron_1, patron_2],
+                  dead_sea_scrolls => [patron_1, patron_2, patron_3],
                   imax => []
                 }
     assert_equal expected, dmns.patrons_by_exhibit_interest
