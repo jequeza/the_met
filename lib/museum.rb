@@ -1,10 +1,12 @@
 class Museum
   attr_reader :name,
-              :exhibits
+              :exhibits,
+              :patrons
 
   def initialize(name)
     @name = name
     @exhibits = Array.new
+    @patrons = Array.new
   end
 
   def add_exhibit(exhibit_obj)
