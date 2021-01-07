@@ -18,4 +18,8 @@ class Museum
       patron_obj.interests.include?(exhibit.name)
     end
   end
+
+  def admit(patron_obj)
+    @patrons.push(patron_obj)
+  end
 end
