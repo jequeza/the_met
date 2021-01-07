@@ -1,6 +1,9 @@
 class Patron
-  def initialize(argument1, argument2)
-    @argument  = argument1
-    @argument2 = argument2
+  attr_reader :name,
+              :spending_money
+
+  def initialize(name, spending_money)
+    @name  = name
+    @spending_money = spending_money
   end
 end
